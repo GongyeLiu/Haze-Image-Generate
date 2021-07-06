@@ -1,0 +1,17 @@
+﻿  源.cpp
+e:\实习用\论文\代码\generate\generate\源.cpp(121): warning C4244: “=”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=float
+          ]
+e:\实习用\论文\代码\generate\generate\源.cpp(122): warning C4244: “=”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=float
+          ]
+e:\实习用\论文\代码\generate\generate\源.cpp(123): warning C4244: “=”: 从“double”转换到“_Tp”，可能丢失数据
+          with
+          [
+              _Tp=float
+          ]
+  Generate.vcxproj -> E:\实习用\论文\代码\Generate\x64\Debug\Generate.exe
