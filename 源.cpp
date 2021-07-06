@@ -74,7 +74,7 @@ void foggy::generate(vector<string> fileName, string imgType, string loadPath, s
 			if (_access(savePath_now.data(), 0) == -1)
 			{
 				string command;
-				command = "mkdir -p " + savePath_now;
+				command = "mkdir " + savePath_now;
 				system(command.c_str());
 			}
 		}
