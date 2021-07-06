@@ -1,15 +1,16 @@
 ﻿  源.cpp
-e:\实习用\论文\代码\generate\generate\源.cpp(121): warning C4244: “=”: 从“double”转换到“_Tp”，可能丢失数据
+e:\实习用\论文\代码\generate\generate\源.cpp(64): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\实习用\论文\代码\generate\generate\源.cpp(148): warning C4244: “=”: 从“double”转换到“_Tp”，可能丢失数据
           with
           [
               _Tp=float
           ]
-e:\实习用\论文\代码\generate\generate\源.cpp(122): warning C4244: “=”: 从“double”转换到“_Tp”，可能丢失数据
+e:\实习用\论文\代码\generate\generate\源.cpp(149): warning C4244: “=”: 从“double”转换到“_Tp”，可能丢失数据
           with
           [
               _Tp=float
           ]
-e:\实习用\论文\代码\generate\generate\源.cpp(123): warning C4244: “=”: 从“double”转换到“_Tp”，可能丢失数据
+e:\实习用\论文\代码\generate\generate\源.cpp(150): warning C4244: “=”: 从“double”转换到“_Tp”，可能丢失数据
           with
           [
               _Tp=float
