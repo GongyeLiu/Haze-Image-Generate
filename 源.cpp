@@ -1,8 +1,8 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include <windows.h>
 #include <opencv2/opencv.hpp>
+#include <windows.h>
 #include <io.h>
 
 #define WINDOWS 1
