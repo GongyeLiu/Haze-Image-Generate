@@ -1,9 +1,11 @@
 #include <iostream>
 #include <sstream>
+#include <fstream>
 #include <vector>
 #include <opencv2/opencv.hpp>
 #include <windows.h>
 #include <io.h>
+
 
 #define WINDOWS 1
 #define LINUX 0
@@ -59,6 +61,7 @@ private:
 // 生成带雾图像
 void foggy::generate(vector<string> fileName, string imgType, string loadPath, string savePath)
 {
+	int imgNum = A_vec.size() * beta_vec.size() * size_vec.size();
 	for (auto file:fileName)
 	{
 		// 读取图片
@@ -76,6 +79,28 @@ void foggy::generate(vector<string> fileName, string imgType, string loadPath, s
 				string command;
 				command = "mkdir " + savePath_now;
 				system(command.c_str());
+				cout << "create new folder：" << savePath_now << endl;
+			}
+			else	// 检查目录中是否有足够的图片
+			{
+				int sum = 0;
+				HANDLE h;
+				WIN32_FIND_DATA p;
+				h = FindFirstFile((savePath_now + "/*.jpg").data(), &p);
+				do
+				{
+					sum++;
+				} while (FindNextFile(h, &p));
+
+				// 如果有，跳过
+				if (sum == imgNum) {
+					cout << "Already exist, skip" << savePath_now << endl;
+					continue;
+				}
+				else
+				{
+					cout << "Restart generate:" << savePath_now << endl;
+				}
 			}
 		}
 		
